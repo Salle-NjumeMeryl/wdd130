@@ -1,11 +1,49 @@
-:root
-
-body {
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
+:root {
+    --primary-color: #004080;
+    --secondary-color: #D3D3D3;
+    --accent-1-color: #AA432B;
+    --accent-2-color: #FF4500; 
+    --heading-font: "Roboto-thin", sans-serif;
+    --text-font: "Roboto-regular", sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: "Roboto", sans-serif;
+body {
+    font-family: var(--text-font);
+    font-weight: 400;
+    color: var(--primary-color);
+    width: 100px;
+}
+
+h1 {
+    font-family: var(--heading-font);
     font-weight: 100;
+    position: absolute;
+} 
+
+div .hero {
+    position: relative;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+article {
+    position: absolute;
+    background-color: var(--secondary-color);
+    opacity: 1;
+}
+
+article img { 
+    float: right;
+}
+
+p {
+    color: var(--primary-color);
+}
+
+footer a {
+    text-decoration: none;
 }
