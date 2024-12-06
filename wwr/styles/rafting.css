@@ -10,9 +10,8 @@
 body {
     font-family: var(--text-font);
     font-weight: 400;
-    color: var(--primary-color);
-    width: 100px;
-}
+    width: 1000px;
+} 
 
 h1 {
     font-family: var(--heading-font);
@@ -20,30 +19,208 @@ h1 {
     position: absolute;
 } 
 
-div .hero {
-    position: relative;
+header {
+    background-color: var(--accent-1-color);
+    padding: 20px;
+    text-align: center;
+    top: 0;
 }
 
-.hero img {
+header img {
     display: block;
-    width: 100%;
+    margin: 0 auto;
+    width: 200px;
     height: auto;
 }
 
-article {
-    position: absolute;
-    background-color: var(--secondary-color);
-    opacity: 1;
+.hero {
+    position: relative;
+    padding: 40px 20px;
+    text-align: center;
 }
 
-article img { 
+.hero h1 {
+    font-family: var(--heading-font);
+    font-weight: 100;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    max-width: 600px;
+    margin: 0 auto 20px;
+}
+
+.hero div img {
+    display: block;
+    width: 200px;
+    height: auto;
+    margin-top: 10px;
+    align-self: center;
+    opacity: 1;
+    border: 2px solid var(--secondary-color);
+
+}
+
+.hero article {
+    position: relative;
+    background-color: var(--secondary-color);
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 4px 10px rgb(0, 0, 0, 0.2);
+    border-radius: 10px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+.hero article h2 {
+    max-width: 600px;
+    margin-bottom: 10px;
+}
+
+.hero article p {
+    margin-bottom: 10px;
+}
+
+.hero article img { 
+    width: 150px;
+    height: auto;
+    margin-top: 10px;
+    border: 2px solid var(--secondary-color);
     float: right;
 }
 
-p {
-    color: var(--primary-color);
+footer {
+    background-color: var(--secondary-color);
+    text-align: center;
+    padding: 20px;
 }
 
-footer a {
-    text-decoration: none;
+footer p {
+    margin: 10px 0;
 }
+
+footer .social-links {
+    display: flex;
+    justify-content: right;
+    gap: 10px;
+
+}
+
+footer .social-links img {
+    width: 30px;
+    height: 30px;
+}
+
+footer .social-links img:hover {
+    transform: scale(1.2);
+}
+
+.history {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    background-color: #fff;
+    padding: 40px 20px;
+    align-items: center;
+}
+
+.history img {
+    grid-column: 2;
+    justify-self: center;
+    width: 150px;
+    height: auto;
+    border: 2px solid var(--accent-2-color);
+}
+
+.history p {
+    padding: 0 20px;
+} 
+
+.adventure {
+    background-color: #f1f1f1;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.adventure h2 {
+    margin-bottom: 20px;
+}
+
+.adventure figure {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.adventure figure img {
+    width: 150px;
+    height: auto;
+    border: 2px solid var(--accent-2-color);
+}
+
+.adventure figure figcaption {
+    align-content: baseline;
+    font-size: 0.9rem;
+    margin-top: 5px;
+}
+
+header {
+    margin: 1rem auto;
+    display: grid;
+    grid-template-columns: 120px 1fr 2fr;
+    align-items: center;
+    border-bottom: 1px solid var(--accent-1-color);
+    max-width: 1000px;
+    background-color: var(--secondary-color);
+
+}
+
+h1 {
+	font-size: 2rem;
+	font-family: var(--text-font);
+}
+
+nav {
+	text-align: center;
+    width: 100%;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.navigation {
+	display: flex;
+	list-style: none;
+    color: var(--primary-color);
+    justify-content: center;
+    gap: 10px;
+}
+
+.navigation li {
+	flex: 1 1 100%;
+    border: solid 1px ;
+    border-radius: 1%;
+    margin: 50px;
+
+}
+
+.navigation a {
+	color: var(--primary-color);
+	padding: 10px 20px;
+	text-decoration: none;
+    border-radius: 5px;
+}
+
+.navigation a:hover {
+	background-color: var(--accent-2-color);
+	text-decoration: underline;
+}
+
+
