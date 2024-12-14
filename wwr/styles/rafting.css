@@ -223,4 +223,45 @@ nav {
 	text-decoration: underline;
 }
 
+button {
+    margin: 1rem;
+    background-color: navy;
+    color: #fff;
+    border: none;
+    border-radius: .5rem;
+    padding: .50rem;
+    font-size: 1.2rem;
+    align-self: center;
+}
 
+button:hover {
+    background-color: red;
+}
+
+fieldset {
+    display: grid;
+    grid-gap: .5rem;
+    margin: 1rem;
+    border: 1px solid rgb(0 0 0 / 0.2);
+    padding: 1rem;
+}
+
+
+.profiles figure {
+    display: flex;
+    justify-content: space-between;
+    gap: 5px; /* Optional: Add space between grid items */
+    flex-wrap: wrap;
+} 
+
+.profiles figure img {
+    width: 20%; /* Ensure images fill the grid cells */
+    height: auto; /* Maintain aspect ratio */
+    border: 2px solid var(--accent-1-color);
+}
+
+.profiles figure figcaption {
+    align-content: baseline;
+    font-size: 0.9rem;
+    margin-top: 1px;
+}
