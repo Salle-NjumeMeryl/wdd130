@@ -265,3 +265,48 @@ fieldset {
     font-size: 0.9rem;
     margin-top: 1px;
 }
+
+.grid-container, .table {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    align-items: center;
+    background: white;
+    padding: 1.5rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+table {
+    border-collapse: collapse;
+    border: 2px solid var(--accent-1-color);
+    font-family: sans-serif;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+}
+
+thead {
+    background-color: var(--primary-color);
+}
+
+th, td {
+    border: 1px solid var(--accent-1-color);
+    padding: 8px 10px;
+}
+
